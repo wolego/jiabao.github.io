@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://renjiabao.cn/"/>
-  <updated>2016-08-30T09:58:57.501Z</updated>
+  <updated>2016-08-30T10:03:55.128Z</updated>
   <id>http://renjiabao.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://renjiabao.cn/2015/10/01/linux-dns/"/>
     <id>http://renjiabao.cn/2015/10/01/linux-dns/</id>
     <published>2015-09-30T16:00:00.000Z</published>
-    <updated>2016-08-30T09:58:57.501Z</updated>
+    <updated>2016-08-30T10:03:55.128Z</updated>
     
     <content type="html"><![CDATA[<h2 id="解析域名3个关键文件："><a href="#解析域名3个关键文件：" class="headerlink" title="解析域名3个关键文件："></a>解析域名3个关键文件：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/etc/hosts</div><div class="line">/etc/resolv.conf</div><div class="line">/etc/nsswitch.conf</div></pre></td></tr></table></figure>
 <h3 id="nsswitch-conf-与系统获取解析的顺序"><a href="#nsswitch-conf-与系统获取解析的顺序" class="headerlink" title="nsswitch.conf 与系统获取解析的顺序"></a>nsswitch.conf 与系统获取解析的顺序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/home/was$ vi /etc/nsswitch.conf</div><div class="line"> #找到hosts关键字</div><div class="line"> #hosts:     db files nisplus nis dns</div><div class="line"> hosts:      files dns  #此为默认配置</div></pre></td></tr></table></figure>
