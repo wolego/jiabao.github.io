@@ -156,16 +156,16 @@ nsswitch.conf 与系统获取解析的顺序1234/home/was$ vi /etc/nsswitch.conf
             
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/linux/">
-                    linux <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Hello/">
+                    Hello <span class="right">1 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Hello/">
-                    Hello <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/linux/">
+                    linux <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -228,7 +228,9 @@ nsswitch.conf 与系统获取解析的顺序1234/home/was$ vi /etc/nsswitch.conf
             
     <div class="tags-row">
         
-            <a href="/tags/linux-dns/" class="chip grey">linux,dns</a>
+            <a href="/tags/linux/" class="chip grey">linux</a>
+        
+            <a href="/tags/dns/" class="chip grey">dns</a>
         
     </div>
 
@@ -249,9 +251,7 @@ nsswitch.conf 与系统获取解析的顺序1234/home/was$ vi /etc/nsswitch.conf
 <blockquote>
 <p>测试易信接口域名解析</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dig 命令为域信息搜索器</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">/home/was$ dig @114.114.114.114 api.yixin.im</div><div class="line"></div><div class="line">; &lt;&lt;&gt;&gt; DiG 9.8.2rc1-RedHat-9.8.2-0.17.rc1.el6 &lt;&lt;&gt;&gt; @114.114.114.114 api.yixin.im</div><div class="line">; (1 server found)</div><div class="line">;; global options: +cmd</div><div class="line">;; Got answer:</div><div class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 18824</div><div class="line">;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0</div><div class="line"></div><div class="line">;; QUESTION SECTION:</div><div class="line">;api.yixin.im.                  IN      A</div><div class="line"></div><div class="line">;; ANSWER SECTION:</div><div class="line">api.yixin.im.           124     IN      A       223.252.199.8</div><div class="line"></div><div class="line">;; Query time: 6 msec</div><div class="line">;; SERVER: 114.114.114.114#53(114.114.114.114)</div><div class="line">;; WHEN: Tue Aug 30 16:52:07 2016</div><div class="line">;; MSG SIZE  rcvd: 46</div></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/home/was$ dig @114.114.114.114 api.yixin.im</div><div class="line">; &lt;&lt;&gt;&gt; DiG 9.8.2rc1-RedHat-9.8.2-0.17.rc1.el6 &lt;&lt;&gt;&gt; @114.114.114.114 api.yixin.im</div><div class="line">; (1 server found)</div><div class="line">;; global options: +cmd</div><div class="line">;; Got answer:</div><div class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 18824</div><div class="line">;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0</div><div class="line"></div><div class="line">;; QUESTION SECTION:</div><div class="line">;api.yixin.im.                  IN      A</div><div class="line"></div><div class="line">;; ANSWER SECTION:</div><div class="line">api.yixin.im.           124     IN      A       223.252.199.8</div><div class="line"></div><div class="line">;; Query time: 6 msec</div><div class="line">;; SERVER: 114.114.114.114#53(114.114.114.114)</div><div class="line">;; WHEN: Tue Aug 30 16:52:07 2016</div><div class="line">;; MSG SIZE  rcvd: 46</div></pre></td></tr></table></figure>
             </div>
         </div>
     </div>
@@ -264,7 +264,7 @@ nsswitch.conf 与系统获取解析的顺序1234/home/was$ vi /etc/nsswitch.conf
         <div id="disqus_thread"></div>
         <script>
             var disqus_config = function() {
-                this.page.url = 'http://yoursite.com/2015/10/01/linux-dns/';
+                this.page.url = 'http://renjiabao.cn/2015/10/01/linux-dns/';
                 this.page.identifier = '2015/10/01/linux-dns/';
             };
             (function() {
