@@ -14,14 +14,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:title" content="读书"/>
-    <meta property="og:site_name" content="Hexo"/>
+    <meta property="og:site_name" content="生命在于折腾"/>
 
     
     <meta property="og:image" content="undefined"/>
     
 
     <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="生命在于折腾" type="application/atom+xml">
     <link rel="stylesheet" href="/css/lib/materialize.min.css">
     <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
@@ -42,7 +42,7 @@
             <i class="fa fa-navicon"></i>
         </a>
         <div class="">
-            <a href="/" class="brand-logo hide-on-med-and-down">Hexo</a>
+            <a href="/" class="brand-logo hide-on-med-and-down">生命在于折腾</a>
             <ul class="right hide-on-med-and-down">
                 
                     <li>
@@ -153,16 +153,16 @@
             
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Hello/">
-                    Hello <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/linux/">
+                    linux <span class="right">1 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/linux/">
-                    linux <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Hello/">
+                    Hello <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -222,7 +222,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s23139051.jpg">
                                 </div>
-                                <div class="card-content blue-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">众妙之门：网站UI设计之道
                                     </span>
                                     <p>评分: 7
@@ -248,7 +248,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img5.douban.com/lpic/s11337059.jpg">
                                 </div>
-                                <div class="card-content blue-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">JavaScript模式
                                     </span>
                                     <p>评分: 8.5
@@ -274,7 +274,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s11373174.jpg">
                                 </div>
-                                <div class="card-content blue-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">JavaScript语言精粹
                                     </span>
                                     <p>评分: 9.5
@@ -305,7 +305,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s27881888.jpg">
                                 </div>
-                                <div class="card-content blue-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">网络游戏核心技术与实战
                                     </span>
                                     <p>评分: ???
@@ -336,7 +336,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s1113106.jpg">
                                 </div>
-                                <div class="card-content blue-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">计算机程序的构造和解释
                                     </span>
                                     <p>评分: ???
@@ -396,14 +396,14 @@
 </div>
 
         <div class="fixed-action-btn float-sitemap">
-    <a class="btn-return-top btn-floating waves-effect blue" title="回到顶部">
+    <a class="btn-return-top btn-floating waves-effect grey darken-2" title="回到顶部">
       <i class="fa fa-caret-square-o-up"></i>
     </a>
     
   </div>
 
     </main>
-    <footer class="page-footer grey darken-1 darken-1">
+    <footer class="page-footer grey darken-2 darken-1">
     
     <div class="container">
         <div class="row">
@@ -414,10 +414,10 @@
     </div>
     
 
-    <div class="footer-copyright blue-link-context">
+    <div class="footer-copyright">
         <div class="container">
             © 2016 wolego (QQ:552333981)
-            <p class="right" style="margin-top: 0;">Powered by <a href="https://hexo.io">Hexo</a>  | Theme <a href="https://github.com/raytaylorlin">raytaylorism</a></p>
+	    <p class="right" style="margin-top: 0;">Powered by Hexo  | Theme raytaylorism </p>
         </div>
     </div>
 </footer>
@@ -574,7 +574,7 @@
                             if (isMatch) {
                                 keywords.forEach(function(keyword) {
                                     var regS = new RegExp(keyword, "gi");
-                                    data_title = data_title.replace(regS, "<span class=\"search-keyword blue lighten-2\">" + keyword + "</span>");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
                                 });
 
                                 str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
@@ -596,7 +596,7 @@
                                     // highlight all keywords
                                     keywords.forEach(function(keyword) {
                                         var regS = new RegExp(keyword, "gi");
-                                        match_content = match_content.replace(regS, "<span class=\"search-keyword blue lighten-2\">" + keyword + "</span>");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
                                     });
 
                                     str += "<p class=\"search-result\">..." + match_content + "...</p>"
