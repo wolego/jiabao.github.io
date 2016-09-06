@@ -1,12 +1,235 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  
-  
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     
-    <entry>
-      <title></title>
-      <url>http://renjiabao.cn/2016/09/06/java_sort/</url>
-      <content type="html"><![CDATA[<p> 用Java语言实现的各种排序，包括插入排序、冒泡排序、选择排序、Shell排序、快速排序、归并排序、堆排序、SortUtil等。</p>
+
+    <title></title>
+    <meta name="author" content="wolego">
+    
+    <meta name="description" content="用Java语言实现的各种排序，包括插入排序、冒泡排序、选择排序、Shell排序、快速排序、归并排序、堆排序、SortUtil等。
+插入排序：12345678910111213141516171819package org.rut.util.algorithm.support;import org.r">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    
+    <meta property="og:site_name" content="生命在于折腾"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="生命在于折腾" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="grey darken-2">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">生命在于折腾</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="modal-trigger " href="http://renjiabao.duoshuo.com/admin/" >
+                            <i class="fa fa-home "></i>
+                            
+                            后台
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav grey darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="../img/about/h.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">wolego</p>
+                        <p class="desc">超级奶爸/技术宅</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect modal-trigger " href="http://renjiabao.duoshuo.com/admin/" >
+                    <i class="fa fa-home "></i>
+                    
+                    后台
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav grey darken-1" id="category-menu">
+    
+
+            
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Hexo/">
+                    Hexo <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/linux/">
+                    linux <span class="right">1 篇</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper grey darken-1">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>无题</h1>
+    
+
+
+            </div>
+            <time class="orange-link-context" datetime="2016-09-06T10:04:12.580Z"><a href="/2016/09/06/java_sort/">2016-09-06</a></time>
+
+            
+
+            <div class="toc orange-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#插入排序："><span class="section table-of-contents-text">插入排序：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#冒泡排序："><span class="section table-of-contents-text">冒泡排序：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#选择排序："><span class="section table-of-contents-text">选择排序：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#Shell排序："><span class="section table-of-contents-text">Shell排序：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#快速排序："><span class="section table-of-contents-text">快速排序：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#改进后的快速排序："><span class="section table-of-contents-text">改进后的快速排序：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#归并排序："><span class="section table-of-contents-text">归并排序：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#改进后的归并排序"><span class="section table-of-contents-text">改进后的归并排序:</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#堆排序："><span class="section table-of-contents-text">堆排序：</span></a></li></ol>
+</div>
+
+
+            <div class="entry orange-link-context">
+                <p> 用Java语言实现的各种排序，包括插入排序、冒泡排序、选择排序、Shell排序、快速排序、归并排序、堆排序、SortUtil等。</p>
 <h4 id="插入排序："><a href="#插入排序：" class="headerlink" title="插入排序："></a>插入排序：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">package org.rut.util.algorithm.support;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line">public class InsertSort implements SortUtil.Sort&#123;</div><div class="line"></div><div class="line">    /* (non-Javadoc)</div><div class="line">     * @see org.rut.util.algorithm.SortUtil.Sort#sort(int[])</div><div class="line">     */</div><div class="line">    public void sort(int[] data) &#123;</div><div class="line">        int temp;</div><div class="line">        for(int i=1;i&lt;data.length;i++)&#123;</div><div class="line">            for(int j=i;(j&gt;0)&amp;&amp;(data[j]&lt;data[j-1]);j--)&#123;</div><div class="line">                SortUtil.swap(data,j,j-1);</div><div class="line">            &#125;</div><div class="line">        &#125;        </div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="冒泡排序："><a href="#冒泡排序：" class="headerlink" title="冒泡排序："></a>冒泡排序：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">package org.rut.util.algorithm.support;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"></div><div class="line">public class BubbleSort implements SortUtil.Sort&#123;</div><div class="line"></div><div class="line">    /* (non-Javadoc)</div><div class="line">     * @see org.rut.util.algorithm.SortUtil.Sort#sort(int[])</div><div class="line">     */</div><div class="line">    public void sort(int[] data) &#123;</div><div class="line">        int temp;</div><div class="line">        for(int i=0;i&lt;data.length;i++)&#123;</div><div class="line">            for(int j=data.length-1;j&gt;i;j--)&#123;</div><div class="line">                if(data[j]&lt;data[j-1])&#123;</div><div class="line">                    SortUtil.swap(data,j,j-1);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="选择排序："><a href="#选择排序：" class="headerlink" title="选择排序："></a>选择排序：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">package org.rut.util.algorithm.support;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"></div><div class="line">public class SelectionSort implements SortUtil.Sort &#123;</div><div class="line"></div><div class="line">    /*</div><div class="line">     * (non-Javadoc)</div><div class="line">     * </div><div class="line">     * @see org.rut.util.algorithm.SortUtil.Sort#sort(int[])</div><div class="line">     */</div><div class="line">    public void sort(int[] data) &#123;</div><div class="line">        int temp;</div><div class="line">        for (int i = 0; i &lt; data.length; i++) &#123;</div><div class="line">            int lowIndex = i;</div><div class="line">            for (int j = data.length - 1; j &gt; i; j--) &#123;</div><div class="line">                if (data[j] &lt; data[lowIndex]) &#123;</div><div class="line">                    lowIndex = j;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            SortUtil.swap(data,i,lowIndex);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -16,51 +239,281 @@
 <h4 id="归并排序："><a href="#归并排序：" class="headerlink" title="归并排序："></a>归并排序：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">package org.rut.util.algorithm.support;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"></div><div class="line">public class MergeSort implements SortUtil.Sort&#123;</div><div class="line"></div><div class="line">    /* (non-Javadoc)</div><div class="line">     * @see org.rut.util.algorithm.SortUtil.Sort#sort(int[])</div><div class="line">     */</div><div class="line">    public void sort(int[] data) &#123;</div><div class="line">        int[] temp=new int[data.length];</div><div class="line">        mergeSort(data,temp,0,data.length-1);</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">    private void mergeSort(int[] data,int[] temp,int l,int r)&#123;</div><div class="line">        int mid=(l+r)/2;</div><div class="line">        if(l==r) return ;</div><div class="line">        mergeSort(data,temp,l,mid);</div><div class="line">        mergeSort(data,temp,mid+1,r);</div><div class="line">        for(int i=l;i&lt;=r;i++)&#123;</div><div class="line">            temp[i]=data[i];</div><div class="line">        &#125;</div><div class="line">        int i1=l;</div><div class="line">        int i2=mid+1;</div><div class="line">        for(int cur=l;cur&lt;=r;cur++)&#123;</div><div class="line">            if(i1==mid+1)</div><div class="line">                data[cur]=temp[i2++];</div><div class="line">            else if(i2&gt;r)</div><div class="line">                data[cur]=temp[i1++];</div><div class="line">            else if(temp[i1]&lt;temp[i2])</div><div class="line">                data[cur]=temp[i1++];</div><div class="line">            else</div><div class="line">                data[cur]=temp[i2++];            </div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="改进后的归并排序"><a href="#改进后的归并排序" class="headerlink" title="改进后的归并排序:"></a>改进后的归并排序:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line">package org.rut.util.algorithm.support;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"></div><div class="line">public class ImprovedMergeSort implements SortUtil.Sort &#123;</div><div class="line"></div><div class="line">    private static final int THRESHOLD = 10;</div><div class="line"></div><div class="line">    /*</div><div class="line">     * (non-Javadoc)</div><div class="line">     * </div><div class="line">     * @see org.rut.util.algorithm.SortUtil.Sort#sort(int[])</div><div class="line">     */</div><div class="line">    public void sort(int[] data) &#123;</div><div class="line">        int[] temp=new int[data.length];</div><div class="line">        mergeSort(data,temp,0,data.length-1);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private void mergeSort(int[] data, int[] temp, int l, int r) &#123;</div><div class="line">        int i, j, k;</div><div class="line">        int mid = (l + r) / 2;</div><div class="line">        if (l == r)</div><div class="line">            return;</div><div class="line">        if ((mid - l) &gt;= THRESHOLD)</div><div class="line">            mergeSort(data, temp, l, mid);</div><div class="line">        else</div><div class="line">            insertSort(data, l, mid - l + 1);</div><div class="line">        if ((r - mid) &gt; THRESHOLD)</div><div class="line">            mergeSort(data, temp, mid + 1, r);</div><div class="line">        else</div><div class="line">            insertSort(data, mid + 1, r - mid);</div><div class="line"></div><div class="line">        for (i = l; i &lt;= mid; i++) &#123;</div><div class="line">            temp[i] = data[i];</div><div class="line">        &#125;</div><div class="line">        for (j = 1; j &lt;= r - mid; j++) &#123;</div><div class="line">            temp[r - j + 1] = data[j + mid];</div><div class="line">        &#125;</div><div class="line">        int a = temp[l];</div><div class="line">        int b = temp[r];</div><div class="line">        for (i = l, j = r, k = l; k &lt;= r; k++) &#123;</div><div class="line">            if (a &lt; b) &#123;</div><div class="line">                data[k] = temp[i++];</div><div class="line">                a = temp[i];</div><div class="line">            &#125; else &#123;</div><div class="line">                data[k] = temp[j--];</div><div class="line">                b = temp[j];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    /**</div><div class="line">     * @param data</div><div class="line">     * @param l</div><div class="line">     * @param i</div><div class="line">     */</div><div class="line">    private void insertSort(int[] data, int start, int len) &#123;</div><div class="line">        for(int i=start+1;i&lt;start+len;i++)&#123;</div><div class="line">            for(int j=i;(j&gt;start) &amp;&amp; data[j]&lt;data[j-1];j--)&#123;</div><div class="line">                SortUtil.swap(data,j,j-1);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="堆排序："><a href="#堆排序：" class="headerlink" title="堆排序："></a>堆排序：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div></pre></td><td class="code"><pre><div class="line">package org.rut.util.algorithm.support;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"></div><div class="line">public class HeapSort implements SortUtil.Sort&#123;</div><div class="line"></div><div class="line">    /* (non-Javadoc)</div><div class="line">     * @see org.rut.util.algorithm.SortUtil.Sort#sort(int[])</div><div class="line">     */</div><div class="line">    public void sort(int[] data) &#123;</div><div class="line">        MaxHeap h=new MaxHeap();</div><div class="line">        h.init(data);</div><div class="line">        for(int i=0;i&lt;data.length;i++)</div><div class="line">            h.remove();</div><div class="line">        System.arraycopy(h.queue,1,data,0,data.length);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">     private static class MaxHeap&#123;         </div><div class="line">         </div><div class="line">        void init(int[] data)&#123;</div><div class="line">            this.queue=new int[data.length+1];</div><div class="line">            for(int i=0;i&lt;data.length;i++)&#123;</div><div class="line">                queue[++size]=data[i];</div><div class="line">                fixUp(size);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">         </div><div class="line">        private int size=0;</div><div class="line"></div><div class="line">        private int[] queue;</div><div class="line">                 </div><div class="line">        public int get() &#123;</div><div class="line">            return queue[1];</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public void remove() &#123;</div><div class="line">            SortUtil.swap(queue,1,size--);</div><div class="line">            fixDown(1);</div><div class="line">        &#125;</div><div class="line">        //fixdown</div><div class="line">        private void fixDown(int k) &#123;</div><div class="line">            int j;</div><div class="line">            while ((j = k &lt;&lt; 1) &lt;= size) &#123;</div><div class="line">                if (j &lt; size &amp;&amp; queue[j]&lt;queue[j+1])</div><div class="line">                    j++; </div><div class="line">                if (queue[k]&gt;queue[j]) //不用交换</div><div class="line">                    break;</div><div class="line">                SortUtil.swap(queue,j,k);</div><div class="line">                k = j;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        private void fixUp(int k) &#123;</div><div class="line">            while (k &gt; 1) &#123;</div><div class="line">                int j = k &gt;&gt; 1;</div><div class="line">                if (queue[j]&gt;queue[k])</div><div class="line">                    break;</div><div class="line">                SortUtil.swap(queue,j,k);</div><div class="line">                k = j;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line">SortUtil：</div><div class="line">package org.rut.util.algorithm;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.support.BubbleSort;</div><div class="line">import org.rut.util.algorithm.support.HeapSort;</div><div class="line">import org.rut.util.algorithm.support.ImprovedMergeSort;</div><div class="line">import org.rut.util.algorithm.support.ImprovedQuickSort;</div><div class="line">import org.rut.util.algorithm.support.InsertSort;</div><div class="line">import org.rut.util.algorithm.support.MergeSort;</div><div class="line">import org.rut.util.algorithm.support.QuickSort;</div><div class="line">import org.rut.util.algorithm.support.SelectionSort;</div><div class="line">import org.rut.util.algorithm.support.ShellSort;</div><div class="line"></div><div class="line"></div><div class="line">public class SortUtil &#123;</div><div class="line">    public final static int INSERT = 1;</div><div class="line">    public final static int BUBBLE = 2;</div><div class="line">    public final static int SELECTION = 3;</div><div class="line">    public final static int SHELL = 4;</div><div class="line">    public final static int QUICK = 5;</div><div class="line">    public final static int IMPROVED_QUICK = 6;</div><div class="line">    public final static int MERGE = 7;</div><div class="line">    public final static int IMPROVED_MERGE = 8;</div><div class="line">    public final static int HEAP = 9;</div><div class="line"></div><div class="line">    public static void sort(int[] data) &#123;</div><div class="line">        sort(data, IMPROVED_QUICK);</div><div class="line">    &#125;</div><div class="line">    private static String[] name=&#123;</div><div class="line">            &quot;insert&quot;, &quot;bubble&quot;, &quot;selection&quot;, &quot;shell&quot;, &quot;quick&quot;, &quot;improved_quick&quot;, &quot;merge&quot;, &quot;improved_merge&quot;, &quot;heap&quot;</div><div class="line">    &#125;;</div><div class="line">     </div><div class="line">    private static Sort[] impl=new Sort[]&#123;</div><div class="line">            new InsertSort(),</div><div class="line">            new BubbleSort(),</div><div class="line">            new SelectionSort(),</div><div class="line">            new ShellSort(),</div><div class="line">            new QuickSort(),</div><div class="line">            new ImprovedQuickSort(),</div><div class="line">            new MergeSort(),</div><div class="line">            new ImprovedMergeSort(),</div><div class="line">            new HeapSort()</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    public static String toString(int algorithm)&#123;</div><div class="line">        return name[algorithm-1];</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">    public static void sort(int[] data, int algorithm) &#123;</div><div class="line">        impl[algorithm-1].sort(data);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public static interface Sort &#123;</div><div class="line">        public void sort(int[] data);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public static void swap(int[] data, int i, int j) &#123;</div><div class="line">        int temp = data[i];</div><div class="line">        data[i] = data[j];</div><div class="line">        data[j] = temp;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-    </entry>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="2016/09/06/java_sort/" data-title="" data-url="http://renjiabao.cn/2016/09/06/java_sort/"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'renjiabao'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-return-top btn-floating waves-effect grey darken-2" title="回到顶部">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
     
-    <entry>
-      <title><![CDATA[Linux域名解析]]></title>
-      <url>http://renjiabao.cn/2015/10/01/linux-dns/</url>
-      <content type="html"><![CDATA[<h2 id="解析域名3个关键文件："><a href="#解析域名3个关键文件：" class="headerlink" title="解析域名3个关键文件："></a>解析域名3个关键文件：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/etc/hosts</div><div class="line">/etc/resolv.conf</div><div class="line">/etc/nsswitch.conf</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="nsswitch-conf-与系统获取解析的顺序"><a href="#nsswitch-conf-与系统获取解析的顺序" class="headerlink" title="nsswitch.conf 与系统获取解析的顺序"></a>nsswitch.conf 与系统获取解析的顺序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/home/was$ vi /etc/nsswitch.conf</div><div class="line"> #找到hosts关键字</div><div class="line"> #hosts:     db files nisplus nis dns</div><div class="line"> hosts:      files dns  #此为默认配置</div></pre></td></tr></table></figure>
-<h3 id="resolv-conf-域名解析服务器配置"><a href="#resolv-conf-域名解析服务器配置" class="headerlink" title="resolv.conf 域名解析服务器配置"></a>resolv.conf 域名解析服务器配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/home/was$ more /etc/resolv.conf</div><div class="line"># Generated by NetworkManager</div><div class="line">nameserver 114.114.114.114</div><div class="line">nameserver 8.8.8.8</div></pre></td></tr></table></figure>
-<h3 id="hosts本地映射地址"><a href="#hosts本地映射地址" class="headerlink" title="hosts本地映射地址"></a>hosts本地映射地址</h3><p>和Windows系统(C:\Windows\System32\drivers\etc\hosts)下的host的文件相类似，就是一个文本文件，里面存放一些IP和域名的对应关系<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/home/was$more /etc/hosts</div><div class="line">127.0.0.1   localhost</div><div class="line">#223.252.198.111 api.yixin.im</div></pre></td></tr></table></figure></p>
-<h3 id="测试易信接口域名解析"><a href="#测试易信接口域名解析" class="headerlink" title="测试易信接口域名解析"></a>测试易信接口域名解析</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/home/was$ dig @114.114.114.114 api.yixin.im</div><div class="line">; &lt;&lt;&gt;&gt; DiG 9.8.2rc1-RedHat-9.8.2-0.17.rc1.el6 &lt;&lt;&gt;&gt; @114.114.114.114 api.yixin.im</div><div class="line">; (1 server found)</div><div class="line">;; global options: +cmd</div><div class="line">;; Got answer:</div><div class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 18824</div><div class="line">;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0</div><div class="line"></div><div class="line">;; QUESTION SECTION:</div><div class="line">;api.yixin.im.                  IN      A</div><div class="line"></div><div class="line">;; ANSWER SECTION:</div><div class="line">api.yixin.im.           124     IN      A       223.252.199.8</div><div class="line"></div><div class="line">;; Query time: 6 msec</div><div class="line">;; SERVER: 114.114.114.114#53(114.114.114.114)</div><div class="line">;; WHEN: Tue Aug 30 16:52:07 2016</div><div class="line">;; MSG SIZE  rcvd: 46</div></pre></td></tr></table></figure>]]></content>
-    </entry>
+  </div>
+
+    </main>
+    <footer class="page-footer grey darken-2 darken-1">
     
-    <entry>
-      <title><![CDATA[Hexo入门]]></title>
-      <url>http://renjiabao.cn/2013/12/20/hexo%E5%85%A5%E9%97%A8/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    </entry>
+    <div class="container">
+        <div class="row">
+            
+
+            
+        </div>
+    </div>
     
-  
-  
-    
-    <entry>
-      <title><![CDATA[读书]]></title>
-      <url>http://renjiabao.cn/reading/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[关于]]></title>
-      <url>http://renjiabao.cn/about/index.html</url>
-      <content type="html"><![CDATA[<p>生命在于折腾!</p>
-]]></content>
-    </entry>
-    
-  
-</search>
+
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 wolego (QQ:552333981)
+	    <p class="right" style="margin-top: 0;">Powered by Hexo  | Theme raytaylorism </p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('grey lighten-2');
+
+            
+            // 添加new标签
+            $('').append('<span class="new badge grey"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=58073081" charset="UTF-8"></script>
+
+
+
+
+
+</body>
+</html>
