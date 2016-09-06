@@ -7,15 +7,13 @@
 
     
 
-    <title>Linux域名解析 | </title>
+    <title>归档：2014 | </title>
     <meta name="author" content="wolego">
-    
-    <meta name="description" content="解析域名3个关键文件：123/etc/hosts/etc/resolv.conf/etc/nsswitch.conf">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="Linux域名解析"/>
+    
     <meta property="og:site_name" content="生命在于折腾"/>
 
     
@@ -201,94 +199,46 @@
 
     <main>
         <div class="container main-container">
-    <nav class="page-nav hide-on-small-only">
+    
+
+<nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper grey darken-1">
-        <span class="breadcrumb">当前位置（分类目录）</span>
-        
-            
-    
-    
-    <a class="breadcrumb" href="/categories/linux/">linux</a>
-
-
+        <span class="breadcrumb">当前位置（标签）</span>
         
 
         
     </div>
 </nav>
 
-<article>
-    <div class="card">
-        <div class="card-content">
-            
-
-            <div class="article-title">
-                
-    
-        <h1>Linux域名解析</h1>
-    
 
 
-            </div>
-            <time class="orange-link-context" datetime="2015-09-30T16:00:00.000Z"><a href="/2015/10/01/linux-dns/">2015-10-01</a></time>
-
-            
-    <div class="tags-row">
+    <ul class="collapsible mt-0" data-collapsible="accordion">
         
-            <a href="/tags/linux/" class="chip grey">linux</a>
         
-            <a href="/tags/dns/" class="chip grey">dns</a>
+            <li>
+                <div class="collapsible-header active">
+                    <i class="fa fa-archive"></i>2014
+                </div>
+                <div class="collapsible-body">
+                    <div class="collection">
+                        
+                            <a href="/2014/10/09/java_sort/" class="collection-item grey-text text-darken-1">
+                                <time datetime="2014-10-08T16:00:00.000Z">2014-10-09</time>
+                                <span>&nbsp;&nbsp;&nbsp;</span>
+                                Java语言实现的各种排序
+                            </a>
+                        
+                            <a href="/2014/10/01/linux-dns/" class="collection-item grey-text text-darken-1">
+                                <time datetime="2014-09-30T16:00:00.000Z">2014-10-01</time>
+                                <span>&nbsp;&nbsp;&nbsp;</span>
+                                Linux域名解析
+                            </a>
+                        
+                    </div>
+                </div>
+            </li>
         
-    </div>
-
-
-            <div class="toc orange-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#解析域名3个关键文件："><span class="section table-of-contents-text">解析域名3个关键文件：</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#nsswitch-conf-与系统获取解析的顺序"><span class="section table-of-contents-text">nsswitch.conf 与系统获取解析的顺序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#resolv-conf-域名解析服务器配置"><span class="section table-of-contents-text">resolv.conf 域名解析服务器配置</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#hosts本地映射地址"><span class="section table-of-contents-text">hosts本地映射地址</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#测试易信接口域名解析"><span class="section table-of-contents-text">测试易信接口域名解析</span></a></li></ol></li></ol>
-</div>
-
-
-            <div class="entry orange-link-context">
-                <h2 id="解析域名3个关键文件："><a href="#解析域名3个关键文件：" class="headerlink" title="解析域名3个关键文件："></a>解析域名3个关键文件：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/etc/hosts</div><div class="line">/etc/resolv.conf</div><div class="line">/etc/nsswitch.conf</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="nsswitch-conf-与系统获取解析的顺序"><a href="#nsswitch-conf-与系统获取解析的顺序" class="headerlink" title="nsswitch.conf 与系统获取解析的顺序"></a>nsswitch.conf 与系统获取解析的顺序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/home/was$ vi /etc/nsswitch.conf</div><div class="line"> #找到hosts关键字</div><div class="line"> #hosts:     db files nisplus nis dns</div><div class="line"> hosts:      files dns  #此为默认配置</div></pre></td></tr></table></figure>
-<h3 id="resolv-conf-域名解析服务器配置"><a href="#resolv-conf-域名解析服务器配置" class="headerlink" title="resolv.conf 域名解析服务器配置"></a>resolv.conf 域名解析服务器配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/home/was$ more /etc/resolv.conf</div><div class="line"># Generated by NetworkManager</div><div class="line">nameserver 114.114.114.114</div><div class="line">nameserver 8.8.8.8</div></pre></td></tr></table></figure>
-<h3 id="hosts本地映射地址"><a href="#hosts本地映射地址" class="headerlink" title="hosts本地映射地址"></a>hosts本地映射地址</h3><p>和Windows系统(C:\Windows\System32\drivers\etc\hosts)下的host的文件相类似，就是一个文本文件，里面存放一些IP和域名的对应关系<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/home/was$more /etc/hosts</div><div class="line">127.0.0.1   localhost</div><div class="line">#223.252.198.111 api.yixin.im</div></pre></td></tr></table></figure></p>
-<h3 id="测试易信接口域名解析"><a href="#测试易信接口域名解析" class="headerlink" title="测试易信接口域名解析"></a>测试易信接口域名解析</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/home/was$ dig @114.114.114.114 api.yixin.im</div><div class="line">; &lt;&lt;&gt;&gt; DiG 9.8.2rc1-RedHat-9.8.2-0.17.rc1.el6 &lt;&lt;&gt;&gt; @114.114.114.114 api.yixin.im</div><div class="line">; (1 server found)</div><div class="line">;; global options: +cmd</div><div class="line">;; Got answer:</div><div class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 18824</div><div class="line">;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0</div><div class="line"></div><div class="line">;; QUESTION SECTION:</div><div class="line">;api.yixin.im.                  IN      A</div><div class="line"></div><div class="line">;; ANSWER SECTION:</div><div class="line">api.yixin.im.           124     IN      A       223.252.199.8</div><div class="line"></div><div class="line">;; Query time: 6 msec</div><div class="line">;; SERVER: 114.114.114.114#53(114.114.114.114)</div><div class="line">;; WHEN: Tue Aug 30 16:52:07 2016</div><div class="line">;; MSG SIZE  rcvd: 46</div></pre></td></tr></table></figure>
-            </div>
-        </div>
-    </div>
-</article>
-
-
-
-
-    <section id="comment">
-        <div class="card">
-            <div class="card-content">
-                <!-- Duoshuo Comment BEGIN -->
-                <div class="ds-thread" data-thread-key="2015/10/01/linux-dns/" data-title="Linux域名解析" data-url="http://renjiabao.cn/2015/10/01/linux-dns/"></div>
-
-                <script type="text/javascript">
-                    console.log(document.querySelector('.ds-thread'));
-                    var duoshuoQuery = {
-                        short_name: 'renjiabao'
-                    };
-                    (function() {
-                        var ds = document.createElement('script');
-                        ds.type = 'text/javascript';
-                        ds.async = true;
-                        ds.src = (document.location.protocol == 'https:'
-                            ? 'https:'
-                            : 'http:') + '//static.duoshuo.com/embed.js';
-                        ds.charset = 'UTF-8';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-                    })();
-                </script>
-                <!-- Duoshuo Comment END -->
-            </div>
-        </div>
-    </section>
-
+    </ul>
 
 
 </div>
