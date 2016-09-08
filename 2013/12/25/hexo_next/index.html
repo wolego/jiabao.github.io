@@ -7,13 +7,15 @@
 
     
 
-    <title>读书 | </title>
+    <title>Hexo 功能完善 | </title>
     <meta name="author" content="wolego">
+    
+    <meta name="description" content="给Hexo添加“上一篇”、“下一篇”导航我使用的是Hexo的默认主题light，该主题的文章页面没有提供“上一篇”和“下一篇”导航功能，而我又非常喜欢默认主题的清爽简洁，只能自己折腾了。在Hexo官方文档中变量说明部分我们可以知道，在 Article (post, page, …) 中page.prev和page.next分别代表上一篇和下一篇文章，这两个变量都是一个page对象，所以通过page.prev.path和page.prev.title就可以获取到上一篇文章的相对路径和标题，然后通过修改/themes/light/layout/文件夹中的文件来实现我们的功能。首先，在/themes/light/layout/_partial/post/文件夹中新建prev_next.ejs文件。">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="读书"/>
+    <meta property="og:title" content="Hexo 功能完善"/>
     <meta property="og:site_name" content="生命在于折腾"/>
 
     
@@ -214,185 +216,84 @@
 
 
     <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper grey darken-1">
+        <span class="breadcrumb">当前位置（分类目录）</span>
         
-
-<div class="container main-container">
+            
     
-        <div class="">
-            <div class="row">
-                <ul class="tabs ">
-                    
-                        <li class="tab col s4 ">
-                            <a class="grey-text " href="#readed">已读(3)</a>
-                        </li>
-                    
-                        <li class="tab col s4 ">
-                            <a class="grey-text " href="#reading">在读(1)</a>
-                        </li>
-                    
-                        <li class="tab col s4 ">
-                            <a class="grey-text " href="#wanted">想读(1)</a>
-                        </li>
-                    
-                </ul>
-            </div>
+    
+    <a class="breadcrumb" href="/categories/Hexo/">Hexo</a>
 
-            
-                <div id="readed" class="row" style="margin-top: 20px;">
-                    
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s23139051.jpg">
-                                </div>
-                                <div class="card-content blue-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">众妙之门：网站UI设计之道
-                                    </span>
-                                    <p>评分: 7
-                                        <a class="external-link right" href="http://book.douban.com/subject/20281463/" target="_blank">
 
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p>推荐非UI人士了解UI阅读。</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img5.douban.com/lpic/s11337059.jpg">
-                                </div>
-                                <div class="card-content blue-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">JavaScript模式
-                                    </span>
-                                    <p>评分: 8.5
-                                        <a class="external-link right" href="http://book.douban.com/subject/11506062/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p>书很薄，但内容相当实用。</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s11373174.jpg">
-                                </div>
-                                <div class="card-content blue-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">JavaScript语言精粹
-                                    </span>
-                                    <p>评分: 9.5
-                                        <a class="external-link right" href="http://book.douban.com/subject/11874748/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p>这是一本前端人员的基础书，强烈推荐阅读，而且越早看受益越多！</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            
-                <div id="reading" class="row" style="margin-top: 20px;">
-                    
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s27881888.jpg">
-                                </div>
-                                <div class="card-content blue-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">网络游戏核心技术与实战
-                                    </span>
-                                    <p>评分: ???
-                                        <a class="external-link right" href="http://book.douban.com/subject/25850090/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            
-                <div id="wanted" class="row" style="margin-top: 20px;">
-                    
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s1113106.jpg">
-                                </div>
-                                <div class="card-content blue-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">计算机程序的构造和解释
-                                    </span>
-                                    <p>评分: ???
-                                        <a class="external-link right" href="http://book.douban.com/subject/1148282/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            
-
-        </div>
         
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>Hexo 功能完善</h1>
+    
+
+
+            </div>
+            <time class="blue-link-context" datetime="2013-12-24T16:00:00.000Z"><a href="/2013/12/25/hexo_next/">2013-12-25</a></time>
+
+            
+
+            <div class="toc blue-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#给Hexo添加“上一篇”、“下一篇”导航"><span class="section table-of-contents-number">1.</span> <span class="section table-of-contents-text">给Hexo添加“上一篇”、“下一篇”导航</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#给博客和文章添加keywords"><span class="section table-of-contents-number">2.</span> <span class="section table-of-contents-text">给博客和文章添加keywords</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#添加自定义widget"><span class="section table-of-contents-number">3.</span> <span class="section table-of-contents-text">添加自定义widget</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#友情链接"><span class="section table-of-contents-number">4.</span> <span class="section table-of-contents-text">友情链接</span></a></li></ol>
+</div>
+
+	    
+            <div class="entry blue-link-context">
+                <h3 id="给Hexo添加“上一篇”、“下一篇”导航"><a href="#给Hexo添加“上一篇”、“下一篇”导航" class="headerlink" title="给Hexo添加“上一篇”、“下一篇”导航"></a>给Hexo添加“上一篇”、“下一篇”导航</h3><p>我使用的是Hexo的默认主题light，该主题的文章页面没有提供“上一篇”和“下一篇”导航功能，而我又非常喜欢默认主题的清爽简洁，只能自己折腾了。<br>在Hexo官方文档中变量说明部分我们可以知道，在 Article (post, page, …) 中page.prev和page.next分别代表上一篇和下一篇文章，这两个变量都是一个page对象，所以通过page.prev.path和page.prev.title就可以获取到上一篇文章的相对路径和标题，然后通过修改/themes/light/layout/文件夹中的文件来实现我们的功能。<br>首先，在/themes/light/layout/_partial/post/文件夹中新建prev_next.ejs文件。<br><a id="more"></a><br>prev_next.ejs<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;% if (page.prev || page.next)&#123; %&gt;</div><div class="line">&lt;div class=&quot;prev_next clearfix&quot;&gt;</div><div class="line">  &lt;% if (page.prev)&#123; %&gt;</div><div class="line">    &lt;a href=&quot;&lt;%- config.root %&gt;&lt;%- page.prev.path %&gt;&quot; class=&quot;alignleft prev&quot; title=&quot;&lt;%= page.prev.title %&gt;&quot;&gt;&lt;%= page.prev.title %&gt;&lt;/a&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">  &lt;% if (page.next)&#123; %&gt;</div><div class="line">    &lt;a href=&quot;&lt;%- config.root %&gt;&lt;%- page.next.path %&gt;&quot; class=&quot;alignright next&quot; title=&quot;&lt;%= page.next.title %&gt;&quot;&gt;&lt;%= page.next.title %&gt;&lt;/a&gt;</div><div class="line">  &lt;% &#125; %&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure></p>
+<p>然后，修改/themes/light/layout/_partial/article.ejs文章模板，找到需要加入“上一篇”和“下一篇”导航功能的位置，加上&lt;%- partial(‘post/prev_next’) %&gt;，比如这样：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">      &lt;% &#125; else &#123; %&gt;</div><div class="line">        &lt;%- partial(&apos;post/category&apos;) %&gt;</div><div class="line">        &lt;%- partial(&apos;post/tag&apos;) %&gt;</div><div class="line">        &lt;%- partial(&apos;post/share&apos;) %&gt;</div><div class="line">        &lt;%- partial(&apos;post/prev_next&apos;) %&gt;</div><div class="line">      &lt;% &#125; %&gt;</div><div class="line">      &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</div><div class="line">    &lt;/footer&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/article&gt;</div><div class="line"></div><div class="line">&lt;%- partial(&apos;comment&apos;) %&gt;</div></pre></td></tr></table></figure></p>
+<p>最后，在/themes/light/source/css/_partial/article.styl文件末尾添加上相应的CSS。<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">.prev_next</div><div class="line">  margin 1em 0</div><div class="line">  clear both</div><div class="line">  overflow hidden</div><div class="line">  a</div><div class="line">    display block</div><div class="line">    float left</div><div class="line">    width 50%</div><div class="line">    background #dbdbdb</div><div class="line">    text-align center</div><div class="line">    padding 0.4em 0</div><div class="line">    color #1ba1e2</div><div class="line">    transition background .45s color .45s</div><div class="line">    &amp;:hover</div><div class="line">      color #fafafa</div><div class="line">      background #717171</div><div class="line">    &amp;.prev::before</div><div class="line">      content &quot;上一篇：&quot;</div><div class="line">      padding-right 0.5em</div><div class="line">    &amp;.next::before</div><div class="line">      content &quot;下一篇：&quot;</div><div class="line">      padding-right 0.5em</div></pre></td></tr></table></figure></p>
+<h3 id="给博客和文章添加keywords"><a href="#给博客和文章添加keywords" class="headerlink" title="给博客和文章添加keywords"></a>给博客和文章添加keywords</h3><hr>
+<p>默认情况下博客和文章是没有关键字的，可以安装如下方法修改。<br>首先，在博客配置文件/Hexo/_config.yml中添加keywords:字段，关键字以英文,分割，如下:<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"># Site</div><div class="line">title: typeof this  #站点名</div><div class="line">subtitle:    # 副标题</div><div class="line">description: # 站点描述，搜索引擎</div><div class="line">author: typeof</div><div class="line">email: xxx@admin.com</div><div class="line">language: zh-CN</div><div class="line">keywords: Web,前端,JavaScript,html5,css3 # 博客关键字</div></pre></td></tr></table></figure></p>
+<p>然后，修改模板文件，我用的是light模板，修改/themes/light/layout/_partial/head.ejs<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">#删除下面这行</div><div class="line">&lt;% if (page.keywords)&#123; %&gt;&lt;meta name=&quot;keywords&quot; content=&quot;&lt;%= page.keywords %&gt;&quot;&gt;&lt;% &#125; %&gt;</div><div class="line">#增加以下内容</div><div class="line">&lt;% if (page.keywords)&#123; %&gt;</div><div class="line">&lt;meta name=&quot;keywords&quot; content=&quot;&lt;%= page.keywords %&gt;,&lt;%= config.keywords %&gt;&quot;&gt;</div><div class="line">&lt;% &#125; else if (config.keywords)&#123; %&gt;</div><div class="line">&lt;meta name=&quot;keywords&quot; content=&quot;&lt;%= config.keywords %&gt;&quot;&gt;</div><div class="line">&lt;%&#125; %&gt;</div></pre></td></tr></table></figure></p>
+<p>简单说明一下：如果页面有关键字，则用页面的关键字加上配置文件里面的关键字，如果没有关键字，则用配置文件的关键字。<br>要给文章添加关键字，只需要在文章里面加入keywords:即可。也可以直接修改创建文章的模板/scaffolds/post.md，在最下面添加keywords:，如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">title: &#123;&#123; title &#125;&#125;</div><div class="line">date: &#123;&#123; date &#125;&#125;</div><div class="line">updated: &#123;&#123; date &#125;&#125;</div><div class="line">tags:</div><div class="line">categories:</div><div class="line">keywords:</div></pre></td></tr></table></figure></p>
+<h3 id="添加自定义widget"><a href="#添加自定义widget" class="headerlink" title="添加自定义widget"></a>添加自定义widget</h3><hr>
+<p>添加widget的方法很简单，首先在/themes/light/layout/_widget/文件夹中创建widget文件your_widget.ejs，然后在主题配置文件中加载你的widget，下面通过创建一个友情链的widget来看看具体操作。<br>友情链接包含连接名称和连接地址两个属性，看到有的教程中把友情连接直接静态地写在widget中，修改起来不方便，所以要借助主题配置文件_config.yml和Hexo提供的访问配置文件的对象theme。<br>首先，在/themes/flight/_config.yml文件中添加如下节。</p>
+<h3 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">blogrolls: #友情链接</div><div class="line">  - Hexo: http://hexo.io</div><div class="line">  - Hexo Document: http://hexo.io/docs</div><div class="line">  - github: https://github.com/</div><div class="line">  - jQuery: http://jquery.com/</div></pre></td></tr></table></figure>
+<p>然后，在/themes/light/layout/_widget/文件夹中创建友情连接widget文件blogroll.ejs，内容可以这样：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;% if (theme.blogrolls &amp;&amp; theme.blogrolls.length &gt; 0) &#123; %&gt;</div><div class="line">&lt;div class=&quot;widget tag&quot;&gt;</div><div class="line">  &lt;h3 class=&quot;title&quot;&gt;&lt;%= __(&apos;blogroll&apos;) %&gt;&lt;/h3&gt;</div><div class="line">  &lt;ul class=&quot;entry&quot;&gt;</div><div class="line">  &lt;% theme.blogrolls.forEach(function(item)&#123; %&gt;</div><div class="line">    &lt;%</div><div class="line">      var description, linkURL</div><div class="line">      for (var tmp in item) &#123;</div><div class="line">        description = tmp;</div><div class="line">        linkURL = item[tmp];</div><div class="line">      &#125;</div><div class="line">    %&gt;</div><div class="line">    &lt;li&gt;&lt;a href=&quot;&lt;%- linkURL %&gt;&quot; target=&quot;_blank&quot;&gt;&lt;%= description %&gt;&lt;/a&gt;&lt;/li&gt;</div><div class="line">  &lt;% &#125;); %&gt;</div><div class="line">  &lt;/ul&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure></p>
+<p>最后，修改主题配置文件/themes/flight/_config.yml，在widgets下增加blogroll。如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">widgets:</div><div class="line">  - category</div><div class="line">  - tag</div><div class="line">  - recent_posts</div><div class="line">  - blogroll</div></pre></td></tr></table></figure></p>
+<p>友情连接widget就创建好了，hexo server，在本地<a href="http://localhost:4000/查看效果吧！同样，我们可以使用此方法添加个人说明，微博秀等widget。" target="_blank" rel="external">http://localhost:4000/查看效果吧！同样，我们可以使用此方法添加个人说明，微博秀等widget。</a><br>添加最新评论widget<br>首先需要声明的是本屌用的是多说评论系统，所以最新评论widget也是利用多说提供的API来实现，上一节已经分享了怎么创建自定义的widget，现在我们按照上面的方法来一步一步实现该widget。<br>在/themes/light/layout/_widget/文件夹下创建最新评论小挂件recent_comments.ejs，内容如下：<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&lt;% if (theme.duoshuo)&#123; %&gt;</div><div class="line">&lt;div class=&quot;widget recent_comments&quot;&gt;</div><div class="line">  &lt;h3 class=&quot;title&quot;&gt;&lt;%= __(&apos;recent_comments&apos;) %&gt;&lt;/h3&gt;</div><div class="line">  &lt;ul class=&quot;entry ds-recent-comments&quot; data-num-items=&quot;5&quot; data-show-avatars=&quot;0&quot; data-show-title=&quot;1&quot; data-show-time=&quot;1&quot;&gt;&lt;/ul&gt;</div><div class="line">  &lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">  if(typeof duoshuoQuery === &apos;undefined&apos;)&#123;</div><div class="line">    var duoshuoQuery = &#123;short_name:&quot;&lt;%- theme.duoshuo %&gt;&quot;&#125;;</div><div class="line">    (function() &#123;</div><div class="line">      var ds = document.createElement(&apos;script&apos;);</div><div class="line">      ds.type = &apos;text/javascript&apos;;ds.async = true;</div><div class="line">      ds.src = &apos;http://static.duoshuo.com/embed.js&apos;;</div><div class="line">      ds.charset = &apos;UTF-8&apos;;</div><div class="line">      (document.getElementsByTagName(&apos;head&apos;)[0]</div><div class="line">      || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);</div><div class="line">    &#125;)();</div><div class="line">  &#125;</div><div class="line">  &lt;/script&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure></p>
+<p>简单说明，在每个页面中，如果使用多个多说控件，只需要添加一次多说js，所以这里有这样的判断if(typeof duoshuoQuery===’undefined’)，在需要用到多说的位置都加上这个判断，避免多次加载js文件；另外多说评论相关的参数：data-num-items显示的评论条数，data-show-avatars是否显示用户头像，data-show-title是否显示文章标题，data-show-time是否显示评论时间，具体参数说明可以参考多说官方说明文档，按照官方文档还可以添加多说最近访客小部件和热评文章小部件。</p>
+
+            </div>
+        </div>
+    </div>
+    
+<div class="prev_next clearfix">
+  
+    <a href="/2014/10/01/linux-dns/" class="alignleft prev" title="Linux域名解析">Linux域名解析</a>
+  
+  
+    <a href="/2013/12/20/hexo入门/" class="alignright next" title="Hexo入门">Hexo入门</a>
+  
+</div>
+
+</article>
+
+
 
 
     <section id="comment">
         <div class="card">
             <div class="card-content">
                 <!-- Duoshuo Comment BEGIN -->
-                <div class="ds-thread" data-thread-key="reading/index.html" data-title="读书" data-url="http://renjiabao.cn/reading/index.html"></div>
+                <div class="ds-thread" data-thread-key="2013/12/25/hexo_next/" data-title="Hexo 功能完善" data-url="http://renjiabao.cn/2013/12/25/hexo_next/"></div>
 
                 <script type="text/javascript">
                     console.log(document.querySelector('.ds-thread'));
@@ -416,7 +317,7 @@
     </section>
 
 
-    
+
 </div>
 
         <div class="fixed-action-btn float-sitemap">

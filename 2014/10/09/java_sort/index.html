@@ -66,7 +66,7 @@
                 
                     <li>
                         <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
-                            <i class="fa fa-bookmark "></i>
+                            <i class="fa fa-th "></i>
                             
                             分类
                         </a>
@@ -81,8 +81,16 @@
                     </li>
                 
                     <li>
-                        <a class="modal-trigger " href="http://renjiabao.duoshuo.com/admin/" >
-                            <i class="fa fa-home "></i>
+                        <a class="menu-about " href="/board" >
+                            <i class="fa fa-edit "></i>
+                            
+                            留言
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="http://renjiabao.duoshuo.com/admin/" >
+                            <i class="fa fa-user "></i>
                             
                             后台
                         </a>
@@ -126,7 +134,7 @@
         
             <li class="no-padding">
                 <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
-                    <i class="fa fa-bookmark "></i>
+                    <i class="fa fa-th "></i>
                     
                     分类
                 </a>
@@ -141,8 +149,16 @@
             </li>
         
             <li class="no-padding">
-                <a class="waves-effect modal-trigger " href="http://renjiabao.duoshuo.com/admin/" >
-                    <i class="fa fa-home "></i>
+                <a class="waves-effect menu-about " href="/board" >
+                    <i class="fa fa-edit "></i>
+                    
+                    留言
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="http://renjiabao.duoshuo.com/admin/" >
+                    <i class="fa fa-user "></i>
                     
                     后台
                 </a>
@@ -173,7 +189,7 @@
 
             <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/Hexo/">
-                    Hexo <span class="right">1 篇</span></a>
+                    Hexo <span class="right">2 篇</span></a>
                 </a>
             </li>
 
@@ -247,7 +263,7 @@
     <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#插入排序"><span class="section table-of-contents-number">1.</span> <span class="section table-of-contents-text">插入排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#冒泡排序"><span class="section table-of-contents-number">2.</span> <span class="section table-of-contents-text">冒泡排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#选择排序"><span class="section table-of-contents-number">3.</span> <span class="section table-of-contents-text">选择排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#Shell排序"><span class="section table-of-contents-number">4.</span> <span class="section table-of-contents-text">Shell排序</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#快速排序"><span class="section table-of-contents-number">5.</span> <span class="section table-of-contents-text">快速排序</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#改进后的快速排序"><span class="section table-of-contents-number">5.1.</span> <span class="section table-of-contents-text">改进后的快速排序</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#归并排序"><span class="section table-of-contents-number">6.</span> <span class="section table-of-contents-text">归并排序</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#改进后的归并排序"><span class="section table-of-contents-number">6.1.</span> <span class="section table-of-contents-text">改进后的归并排序</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#堆排序"><span class="section table-of-contents-number">7.</span> <span class="section table-of-contents-text">堆排序</span></a></li></ol>
 </div>
 
-
+	    
             <div class="entry blue-link-context">
                 <p> 用Java语言实现的各种排序，包括插入排序、冒泡排序、选择排序、Shell排序、快速排序、归并排序、堆排序、SortUtil等。</p>
 <h4 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h4><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">package</span> org.rut.util.algorithm.support;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertSort</span> <span class="keyword">implements</span> <span class="title">SortUtil</span>.<span class="title">Sort</span></span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] data)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> temp;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;data.length;i++)&#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;(j&gt;<span class="number">0</span>)&amp;&amp;(data[j]&lt;data[j-<span class="number">1</span>]);j--)&#123;</div><div class="line">                SortUtil.swap(data,j,j-<span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;        </div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -265,6 +281,14 @@
             </div>
         </div>
     </div>
+    
+<div class="prev_next clearfix">
+  
+  
+    <a href="/2014/10/01/linux-dns/" class="alignright next" title="Linux域名解析">Linux域名解析</a>
+  
+</div>
+
 </article>
 
 
@@ -322,7 +346,7 @@
 
     <div class="footer-copyright">
         <div class="container">
-            © 2016 wolego (QQ:552333981)
+            © 2010-2016 wolego (QQ:552333981)
 	    <p class="right" style="margin-top: 0;">Powered by Hexo  | Theme raytaylorism </p>
         </div>
     </div>
