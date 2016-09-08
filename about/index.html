@@ -94,7 +94,7 @@
         <li class="side-user">
             <div class="row">
                 <div class="col s4 no-padding">
-                    <img class="avatar-image circle responsive-img" src="../img/about/h.jpg" alt="User Avatar">
+                    <img class="avatar-image circle responsive-img" src="/img/about/h.jpg" alt="User Avatar">
                 </div>
                 <div class="info col s8 valign-wrapper no-padding">
                     <div class="valign">
@@ -155,16 +155,16 @@
             
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/linux/">
-                    linux <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">1 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Java/">
-                    Java <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/linux/">
+                    linux <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -207,7 +207,7 @@
     <div class="card about-page row">
         <div class="header grey">
             <div class="avatar-wrapper center-align">
-                <img class="avatar-image circle responsive-img" src="../img/about/h.jpg" alt="User Avatar">
+                <img class="avatar-image circle responsive-img" src="/img/about/h.jpg" alt="User Avatar">
             </div>
             <div class="info center-align">
                 <p class="name">wolego</p>
@@ -222,7 +222,7 @@
                 <section class="about-me">
                     <h1 class="grey-text">
                         <i class="fa fa-street-view"></i>关于</h1>
-                    <div class="entry orange-link-context">
+                    <div class="entry blue-link-context">
                         <p>生命在于折腾!</p>
 
                     </div>
@@ -370,7 +370,7 @@
                             
                                 <div class="project-item col m6">
                                     <div class="">
-                                        <div class="card medium orange-link-context">
+                                        <div class="card medium blue-link-context">
                                             <div class="card-image">
                                                 <img class="card-cover-image" src="../img/project/A.png">
                                                 <span class="card-title">项目A</span>
@@ -394,7 +394,7 @@
                             
                                 <div class="project-item col m6">
                                     <div class="">
-                                        <div class="card medium orange-link-context">
+                                        <div class="card medium blue-link-context">
                                             <div class="card-image">
                                                 <img class="card-cover-image" src="../img/project/B.png">
                                                 <span class="card-title">你的作品B</span>
@@ -716,7 +716,7 @@
                             if (isMatch) {
                                 keywords.forEach(function(keyword) {
                                     var regS = new RegExp(keyword, "gi");
-                                    data_title = data_title.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword blue lighten-2\">" + keyword + "</span>");
                                 });
 
                                 str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
@@ -738,7 +738,7 @@
                                     // highlight all keywords
                                     keywords.forEach(function(keyword) {
                                         var regS = new RegExp(keyword, "gi");
-                                        match_content = match_content.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword blue lighten-2\">" + keyword + "</span>");
                                     });
 
                                     str += "<p class=\"search-result\">..." + match_content + "...</p>"

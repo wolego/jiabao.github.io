@@ -92,7 +92,7 @@
         <li class="side-user">
             <div class="row">
                 <div class="col s4 no-padding">
-                    <img class="avatar-image circle responsive-img" src="../img/about/h.jpg" alt="User Avatar">
+                    <img class="avatar-image circle responsive-img" src="/img/about/h.jpg" alt="User Avatar">
                 </div>
                 <div class="info col s8 valign-wrapper no-padding">
                     <div class="valign">
@@ -153,16 +153,16 @@
             
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/linux/">
-                    linux <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/Java/">
+                    Java <span class="right">1 篇</span></a>
                 </a>
             </li>
 
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Java/">
-                    Java <span class="right">1 篇</span></a>
+                <a class="no-padding" href="/categories/linux/">
+                    linux <span class="right">1 篇</span></a>
                 </a>
             </li>
 
@@ -216,7 +216,7 @@
 
                 </div>
 
-                <time class="orange-link-context" datetime="2014-10-08T16:00:00.000Z"><a href="/2014/10/09/java_sort/">2014-10-09</a></time>
+                <time class="blue-link-context" datetime="2014-10-08T16:00:00.000Z"><a href="/2014/10/09/java_sort/">2014-10-09</a></time>
 
                 
     <div class="tags-row">
@@ -230,17 +230,16 @@
 
 
                 
-                    <div class="entry orange-link-context">
+                    <div class="entry blue-link-context">
                         <p> 用Java语言实现的各种排序，包括插入排序、冒泡排序、选择排序、Shell排序、快速排序、归并排序、堆排序、SortUtil等。</p>
-<h4 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">package org.rut.util.algorithm.support;</div><div class="line"></div><div class="line">import org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line">public class InsertSort implements SortUtil.Sort&#123;</div><div class="line"></div><div class="line">    /* (non-Javadoc)</div><div class="line">     * @see org.rut.util.algorithm.SortUtil.Sort#sort(int[])</div><div class="line">     */</div><div class="line">    public void sort(int[] data) &#123;</div><div class="line">        int temp;</div><div class="line">        for(int i=1;i&lt;data.length;i++)&#123;</div><div class="line">            for(int j=i;(j&gt;0)&amp;&amp;(data[j]&lt;data[j-1]);j--)&#123;</div><div class="line">                SortUtil.swap(data,j,j-1);</div><div class="line">            &#125;</div><div class="line">        &#125;        </div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4>
+<h4 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h4><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">package</span> org.rut.util.algorithm.support;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertSort</span> <span class="keyword">implements</span> <span class="title">SortUtil</span>.<span class="title">Sort</span></span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] data)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> temp;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;data.length;i++)&#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;(j&gt;<span class="number">0</span>)&amp;&amp;(data[j]&lt;data[j-<span class="number">1</span>]);j--)&#123;</div><div class="line">                SortUtil.swap(data,j,j-<span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;        </div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
                     </div>
                 
             </div>
 
             
-            <div class="card-action orange-link-context">
-                <a href="2014/10/09/java_sort/">READ MORE</a>
+            <div class="card-action blue-link-context">
+                <a href="2014/10/09/java_sort/">more >></a>
             </div>
             
         </div>
@@ -259,7 +258,7 @@
 
                 </div>
 
-                <time class="orange-link-context" datetime="2014-09-30T16:00:00.000Z"><a href="/2014/10/01/linux-dns/">2014-10-01</a></time>
+                <time class="blue-link-context" datetime="2014-09-30T16:00:00.000Z"><a href="/2014/10/01/linux-dns/">2014-10-01</a></time>
 
                 
     <div class="tags-row">
@@ -273,15 +272,15 @@
 
 
                 
-                    <div class="entry orange-link-context">
-                        <h2 id="解析域名3个关键文件："><a href="#解析域名3个关键文件：" class="headerlink" title="解析域名3个关键文件："></a>解析域名3个关键文件：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/etc/hosts</div><div class="line">/etc/resolv.conf</div><div class="line">/etc/nsswitch.conf</div></pre></td></tr></table></figure>
+                    <div class="entry blue-link-context">
+                        <h2 id="解析域名3个关键文件："><a href="#解析域名3个关键文件：" class="headerlink" title="解析域名3个关键文件："></a>解析域名3个关键文件：</h2><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">/etc/hosts</div><div class="line">/etc/resolv.conf</div><div class="line">/etc/nsswitch.conf</div></pre></td></tr></table></figure>
                     </div>
                 
             </div>
 
             
-            <div class="card-action orange-link-context">
-                <a href="2014/10/01/linux-dns/">READ MORE</a>
+            <div class="card-action blue-link-context">
+                <a href="2014/10/01/linux-dns/">more >></a>
             </div>
             
         </div>
@@ -300,22 +299,22 @@
 
                 </div>
 
-                <time class="orange-link-context" datetime="2013-12-19T16:00:00.000Z"><a href="/2013/12/20/hexo入门/">2013-12-20</a></time>
+                <time class="blue-link-context" datetime="2013-12-19T16:00:00.000Z"><a href="/2013/12/20/hexo入门/">2013-12-20</a></time>
 
                 
 
 
                 
-                    <div class="entry orange-link-context">
+                    <div class="entry blue-link-context">
                         <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
                     </div>
                 
             </div>
 
             
-            <div class="card-action orange-link-context">
-                <a href="2013/12/20/hexo入门/">READ MORE</a>
+            <div class="card-action blue-link-context">
+                <a href="2013/12/20/hexo入门/">more >></a>
             </div>
             
         </div>
@@ -518,7 +517,7 @@
                             if (isMatch) {
                                 keywords.forEach(function(keyword) {
                                     var regS = new RegExp(keyword, "gi");
-                                    data_title = data_title.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword blue lighten-2\">" + keyword + "</span>");
                                 });
 
                                 str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
@@ -540,7 +539,7 @@
                                     // highlight all keywords
                                     keywords.forEach(function(keyword) {
                                         var regS = new RegExp(keyword, "gi");
-                                        match_content = match_content.replace(regS, "<span class=\"search-keyword orange lighten-2\">" + keyword + "</span>");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword blue lighten-2\">" + keyword + "</span>");
                                     });
 
                                     str += "<p class=\"search-result\">..." + match_content + "...</p>"
