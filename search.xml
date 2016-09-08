@@ -72,6 +72,13 @@
   
     
     <entry>
+      <title><![CDATA[留言板]]></title>
+      <url>http://renjiabao.cn/board/index.html</url>
+      <content type="html"><![CDATA[<p>有任何问题请留言，很乐意与大家沟通交流！</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于]]></title>
       <url>http://renjiabao.cn/about/index.html</url>
       <content type="html"><![CDATA[<p>生命在于折腾!</p>
@@ -82,13 +89,6 @@
       <title><![CDATA[读书]]></title>
       <url>http://renjiabao.cn/reading/index.html</url>
       <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[留言板]]></title>
-      <url>http://renjiabao.cn/board/index.html</url>
-      <content type="html"><![CDATA[<p>有任何问题请留言，很乐意与大家沟通交流！</p>
-]]></content>
     </entry>
     
   
