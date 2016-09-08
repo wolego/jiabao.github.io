@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://renjiabao.cn/"/>
-  <updated>2016-09-08T07:40:02.030Z</updated>
+  <updated>2016-09-08T10:35:10.370Z</updated>
   <id>http://renjiabao.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://renjiabao.cn/2014/10/09/java_sort/"/>
     <id>http://renjiabao.cn/2014/10/09/java_sort/</id>
     <published>2014-10-08T16:00:00.000Z</published>
-    <updated>2016-09-08T07:40:02.030Z</updated>
+    <updated>2016-09-08T10:35:10.370Z</updated>
     
     <content type="html"><![CDATA[<p> 用Java语言实现的各种排序，包括插入排序、冒泡排序、选择排序、Shell排序、快速排序、归并排序、堆排序、SortUtil等。</p>
 <h4 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h4><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">package</span> org.rut.util.algorithm.support;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.rut.util.algorithm.SortUtil;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertSort</span> <span class="keyword">implements</span> <span class="title">SortUtil</span>.<span class="title">Sort</span></span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] data)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> temp;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;data.length;i++)&#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;(j&gt;<span class="number">0</span>)&amp;&amp;(data[j]&lt;data[j-<span class="number">1</span>]);j--)&#123;</div><div class="line">                SortUtil.swap(data,j,j-<span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;        </div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>

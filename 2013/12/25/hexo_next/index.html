@@ -13,7 +13,9 @@
     <meta name="description" content="给Hexo添加“上一篇”、“下一篇”导航我使用的是Hexo的默认主题light，该主题的文章页面没有提供“上一篇”和“下一篇”导航功能，而我又非常喜欢默认主题的清爽简洁，只能自己折腾了。在Hexo官方文档中变量说明部分我们可以知道，在 Article (post, page, …) 中page.prev和page.next分别代表上一篇和下一篇文章，这两个变量都是一个page对象，所以通过page.prev.path和page.prev.title就可以获取到上一篇文章的相对路径和标题，然后通过修改/themes/light/layout/文件夹中的文件来实现我们的功能。首先，在/themes/light/layout/_partial/post/文件夹中新建prev_next.ejs文件。">
     
     
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="Web,前端,JavaScript,html5,css3,hexo,linux,java">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:title" content="Hexo 功能完善"/>
     <meta property="og:site_name" content="生命在于折腾"/>
